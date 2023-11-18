@@ -1,13 +1,17 @@
+ls
 writeCode
 
 #### Perform users CRUD operation using mongoose from an express application
 
 - create an express application named sample
 - connect to mongodb database using mongoose.connect() in `app.js`
-- create a user schema in models directory
-  - name
-  - email
-  - sports
+- create a user schema in
+
+models directory
+
+- name
+- email
+- sports
 - create user model based on schema
 - export it from model
 - import it into app.js
@@ -30,6 +34,8 @@ Q. query a single document(user) using mongoose
 - use Model.findById(id)
 
 Mention the difference between them in comments, if any ?
+
+//Model.findOne and Model.findById gives us just a single documnet/user , thats what we expect from it , model.find with a particular id also gives a single documnet/user but instead the user is wrapped inside an array.
 
 Q. Update a user
 
